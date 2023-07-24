@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <link rel="stylesheet" href="https://g.alicdn.com/apsara-media-box/imp-web-player/2.16.3/skins/default/aliplayer-min.css" /> 
+        <script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/apsara-media-box/imp-web-player/2.16.3/aliplayer-min.js"></script> 
+     
+</head>
+<body>
+   
+        <div id="J_prismPlayer"></div>
+      <script>
+        var player = new Aliplayer({
+        id: 'J_prismPlayer',
+        source: 'rtmp://live-play.sdzjds.com/1686194751905586906/28a2c11021b09bc84c3fddbef10efcc7a9e77da70bd4a82daceb0313bc978de8?auth_key=1690173934-0-0-7c482584710c768fbf15f4663c9ae316',//播放地址，可以是第三方点播地址，或阿里云点播服务中的播放地址。
+      },function(player){
+        // console.log(player)
+        console.log('The player is created.')
+     });
+      </script>
+</body>
+</html>
